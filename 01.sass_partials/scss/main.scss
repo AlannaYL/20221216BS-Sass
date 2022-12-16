@@ -1,0 +1,17 @@
+//  Partials 概念指拆分 SCSS 檔案再組合成自己的結構
+// 1. 以底線 _ 開頭的方式來為 partials 檔案命名，例如 _variables.scss
+// 2. @import 時不需寫底線及副檔名
+// 3. partials 載入的順序很重要，例如 functions、varaibles、mixins 都會先被載入
+
+// 函式
+@import './functions';
+// 變數
+@import './variables';
+// 混入
+@import './mixins';
+// 重置
+@import './reset';
+// 組件
+@import './components';
+// 版型
+@import './layout';
